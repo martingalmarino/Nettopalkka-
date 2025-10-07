@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { taxDataFI, getMunicipalityBySlug, getMunicipalityName } from '@/lib/taxDataFI';
 import { CalculatorCard } from '@/components/CalculatorCard';
