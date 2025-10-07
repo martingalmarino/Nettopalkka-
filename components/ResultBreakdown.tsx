@@ -151,8 +151,8 @@ export function ResultBreakdown({ breakdown, monthly }: ResultBreakdownProps) {
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div
-                    className={`h-2 rounded-full ${item.color} transition-all duration-300`}
-                    style={{ width: `${percentage}%` }}
+                    className={`h-2 rounded-full ${item.color} progress-bar`}
+                    data-width={Math.round(percentage)}
                   ></div>
                 </div>
               </div>

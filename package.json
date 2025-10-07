@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -23,9 +23,6 @@
     "autoprefixer": "10.4.19",
     "postcss": "8.4.39",
     "@tailwindcss/forms": "0.5.7",
-    "clsx": "2.1.1",
-    "lucide-react": "0.408.0",
-    "eslint": "8.57.1",
-    "eslint-config-next": "14.2.5"
+    "clsx": "2.1.1"
   }
 }
