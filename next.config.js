@@ -9,8 +9,7 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  // Remove output: 'export' to allow dynamic routes
+  }
 }
 
 module.exports = nextConfig

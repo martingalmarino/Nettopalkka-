@@ -1,0 +1,9 @@
+# Ignore static export files
+out/
+dist/
+build/
+
+# Ignore development files
+.next/
+node_modules/
+.git/
