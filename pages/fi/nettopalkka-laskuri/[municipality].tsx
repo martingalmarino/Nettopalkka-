@@ -43,17 +43,17 @@ export default function MunicipalityNettopalkkaPage({ municipality }: Municipali
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
-                <a href="/" className="text-2xl font-bold text-primary-800">
+                <Link href="/" className="text-2xl font-bold text-primary-800">
                   Nettopalkka.fi
-                </a>
+                </Link>
               </div>
               <nav className="hidden md:flex space-x-8">
-                <a href="/fi/nettopalkka-laskuri" className="text-gray-600 hover:text-primary-600">
+                <Link href="/fi/nettopalkka-laskuri" className="text-gray-600 hover:text-primary-600">
                   Nettopalkka Laskuri
-                </a>
-                <a href="/fi/verolaskuri" className="text-gray-600 hover:text-primary-600">
+                </Link>
+                <Link href="/fi/verolaskuri" className="text-gray-600 hover:text-primary-600">
                   Vero Laskuri
-                </a>
+                </Link>
               </nav>
             </div>
           </div>
@@ -63,9 +63,9 @@ export default function MunicipalityNettopalkkaPage({ municipality }: Municipali
         <div className="bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <nav className="flex space-x-2 text-sm">
-              <a href="/" className="text-gray-500 hover:text-gray-700">Koti</a>
+              <Link href="/" className="text-gray-500 hover:text-gray-700">Koti</Link>
               <span className="text-gray-400">/</span>
-              <a href="/fi/nettopalkka-laskuri" className="text-gray-500 hover:text-gray-700">Nettopalkka Laskuri</a>
+              <Link href="/fi/nettopalkka-laskuri" className="text-gray-500 hover:text-gray-700">Nettopalkka Laskuri</Link>
               <span className="text-gray-400">/</span>
               <span className="text-gray-800 font-medium">{municipality.name}</span>
             </nav>
@@ -135,18 +135,18 @@ export default function MunicipalityNettopalkkaPage({ municipality }: Municipali
                     Muut laskurit
                   </h3>
                   <div className="space-y-3">
-                    <a 
+                    <Link 
                       href={`/fi/verolaskuri/${municipality.slug}`}
                       className="block w-full bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200"
                     >
                       Vero Laskuri
-                    </a>
-                    <a 
+                    </Link>
+                    <Link 
                       href="/fi/kaikki-kunnat"
                       className="block w-full bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200"
                     >
                       Kaikki Kunnat
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -187,9 +187,9 @@ export default function MunicipalityNettopalkkaPage({ municipality }: Municipali
               <div>
                 <h4 className="font-semibold mb-4">Laskurit</h4>
                 <ul className="space-y-2 text-gray-300">
-                  <li><a href="/fi/nettopalkka-laskuri" className="hover:text-white">Nettopalkka Laskuri</a></li>
-                  <li><a href="/fi/verolaskuri" className="hover:text-white">Vero Laskuri</a></li>
-                  <li><a href="/fi/kaikki-kunnat" className="hover:text-white">Kaikki Kunnat</a></li>
+                  <li><Link href="/fi/nettopalkka-laskuri" className="hover:text-white">Nettopalkka Laskuri</Link></li>
+                  <li><Link href="/fi/verolaskuri" className="hover:text-white">Vero Laskuri</Link></li>
+                  <li><Link href="/fi/kaikki-kunnat" className="hover:text-white">Kaikki Kunnat</Link></li>
                 </ul>
               </div>
               <div>
